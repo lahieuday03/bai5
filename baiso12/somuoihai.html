@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boostrap 4.5 -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+
+	<!-- Font Awersome 5 -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+	<!-- css -->
+	<link rel="stylesheet" href="main.css">
+
+	<title>Document</title>
+	<style>
+		body {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+	</style>
+	<script type="text/javascript">
+		//<=!=[=C=D=A=T=A=[
+		document.onkeypress = function (event) {
+			event = (event || window.event);
+			if (event.keyCode === 123) {
+				return false;
+			}
+		};
+		document.onmousedown = function (event) {
+			event = (event || window.event);
+			if (event.keyCode === 123) {
+				return false;
+			}
+		};
+		document.onkeydown = function (event) {
+			event = (event || window.event);
+			if (event.keyCode === 123) {
+				return false;
+			}
+		};
+		function contentprotector() {
+			return false;
+		}
+		function mousehandler(e) {
+			var myevent = (isNS) ? e : event;
+			var eventbutton = (isNS) ? myevent.which : myevent.button;
+			if ((eventbutton === 2) || (eventbutton === 3)) {
+				return false;
+			}
+		}
+		document.oncontextmenu = contentprotector;
+		document.onmouseup = contentprotector;
+		var isCtrl = false;
+		window.onkeyup = function (e) {
+			if (e.which === 17)
+				isCtrl = false;
+		}
+		window.onkeydown = function (e) {
+			if (e.which === 17)
+				isCtrl = true;
+			if (((e.which === 85) || (e.which === 65) || (e.which === 88) || (e.which === 67) || (e.which === 86) || (e.which === 83)) && isCtrl === true) {
+				return false;
+			}
+		}
+		isCtrl = false;
+		document.ondragstart = contentprotector;
+//]=]=> </script>
+</head>
+
+<body>
+
+	<!-- header -->
+	<header>
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="navbar navbar-expand-sm navbar-light">
+						<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse"
+							data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<a class="navbar-brand font-weight-bold" id="nameSite" href="#">CREVEA Inc.</a>
+						<a class="nav-link" href="#" id="search-icon-mobile"><i
+								class="fas fa-search"></i></a>
+						<div class="collapse navbar-collapse" id="collapsibleNavId">
+							<ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+								<li class="nav-item active">
+									<a class="nav-link text-warning" href="#">Home <span
+											class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">OUR BUSINESS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">ABOUTUS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">NEWS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">CONTACTS</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="search-icon" href="#"><i
+											class="fas fa-search"></i></a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</header> <!-- end header -->
+
+	<div class="picture">
+		<img class="img-fluid" src="img/img01.jpg" alt="">
+	</div>
+
+	<!-- aboutus -->
+	<section class="aboutus">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<div class="title">
+						<div class="line"></div>
+						<a href="#">ABOUTUS</a>
+					</div>
+					<div class="content">
+						<h3>Our goal is "to support and connect educational institutions,
+							companies across the world by providing highly qualified/skilled
+							human resource for mutual development and consulting
+							services in job and skills training". Achieving this,
+							we hope to contribute to the betterment of society.</h3>
+						<p>Our staff are highly experienced and senior members
+							of diverse backgrounds in educational institutions
+							and companies in Vietnam and other territories across
+							the globe. We could provide superior services to our customers</p>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6">
+					<img class="img-fluid" src="img/img02.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section> <!-- end aboutus -->
+
+	<!-- ourBusiness -->
+	<section class="ourBusiness">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-lg-6 pl-md-0 pr-md-0">
+					<img id="image03" src="img/img03.jpg" alt="">
+				</div>
+				<div class="col-12 col-lg-6 pl-md-0 pr-md-0">
+					<img id="image04" src="img/img04.jpg" alt="">
+
+					<div class="group-text text-white">
+						<table>
+							<tr>
+								<td></td>
+								<td>
+									<div class="title">
+										<div class="line bg-white"></div>
+										<a class="text-white" href="#">Our business</a>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-circle" src="img/g8Uz5Ei.jpg">
+								</td>
+								<td>
+									<h4>Education consulting</h4>
+									<p>We offer various services as required form different
+										educational institutions in Vietnam</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<img class="img-circle" src="img/F5Chde2.png">
+								</td>
+								<td>
+									<h4>Business consulting</h4>
+									<p>We provide various services according to requests form foreign
+										companies and educational institutions</p>
+								</td>
+							</tr>
+						</table>
+					</div> <!-- end group text -->
+				</div>
+			</div>
+		</div>
+	</section> <!-- end ourBusiness -->
+
+	<!-- news -->
+	<section class="news">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="title">
+						<div class="line"></div>
+						<a href="#">News</a>
+					</div>
+					<div>
+						<h3>Latest News</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-4 mt-3 mt-sm-0">
+					<div class="card">
+						<img class="card-img-top" src="img/img05.jpg" alt="">
+						<div class="card-body">
+							<h4 class="card-title">Japanese staff agency company visited to Hanoi</h4>
+							<a href="#">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 mt-3 mt-sm-0">
+					<div class="card">
+						<img class="card-img-top" src="img/img06.jpg" alt="">
+						<div class="card-body">
+							<h4 class="card-title">Taiwanese university visited to Hanoi</h4>
+							<a href="#">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-sm-4 mt-3 mt-sm-0">
+					<div class="card">
+						<img class="card-img-top" src="img/img07.jpg" alt="">
+						<div class="card-body">
+							<h4 class="card-title">We are pleased to annouce the renewal of CREVEA Inc.
+								official website</h4>
+							<p>We changed the whole design and format to create more efficient and
+								superior experience for our customers once they visit the website. We
+								will continue updating it and providing more useful information. The
+								website in Japannese will come out soon.</p>
+							<a href="#">Read more <i class="fas fa-long-arrow-alt-right"></i></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> <!-- end news -->
+
+	<!-- contacts -->
+	<section class="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<div class="title">
+						<div class="line"></div>
+						<a href="#">Contacts</a>
+					</div>
+					<h4>We will connect you with the relevant person in charge. Please click "Send button"
+						after providing your registering input</h4>
+					<div class="form-group">
+						<div class="row">
+							<div class="col-12 col-lg-4 pb-3">
+								<input class="form-control" type="text" placeholder="Your name">
+							</div>
+							<div class="col-12 col-lg-4 pb-3">
+								<input class="form-control" type="text" placeholder="Email address">
+							</div>
+							<div class="col-12 col-lg-4 pb-3">
+								<input class="form-control" type="text" placeholder="Phone number">
+							</div>
+						</div>
+					</div> <!-- end form group -->
+					<div>
+						<input class="form-control" id="txt-message" type="text" placeholder="Your message">
+					</div>
+					<div>
+						<a class="btn btn-warning text-white pl-4 pr-4 pt-2 pb-2" href="#">Send Message</a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6">
+					<img class="img-fluid" src="img/img08.png" alt="">
+				</div>
+			</div>
+		</div>
+	</section> <!-- end contacts -->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-4">
+					<h4>CREVEA</h4>
+					<p><b>Add: </b> No 45C, 210 alley Hoang Quoc Viet street Cau Giay - Ha Noi - Viet Nam</p>
+					<p><b>TEL: </b> (+84)-989-412-665</p>
+					<p><b>Email: </b> daisuke.kawashima@crevea.vn</p>
+				</div> <!-- end col-1 -->
+
+				<div class="col-12 col-lg-2">
+					<h4>CATEGORYS</h4>
+					<ul>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Home </a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> News </a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> About us </a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Our business</a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Contact </a></li>
+					</ul>
+				</div> <!-- end col-2 -->
+
+				<div class="col-12 col-lg-2">
+					<h4>LANGUAGE</h4>
+					<ul>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> English </a></li>
+						<li><a href="#"><i class="fas fa-chevron-right"></i> Japanese</a></li>
+					</ul>
+				</div> <!-- end col-3 -->
+
+				<div class="col-12 col-lg-4">
+					<h4>GET OUR NEWS FROM US</h4>
+					<p>Please enter the email below to not miss the latest news from us!</p>
+					<div class="row" id="input-group">
+						<div class="col-9 pr-0">
+							<input class="form-control" id="txt-email" type="text"
+								placeholder="Your email enter">
+						</div>
+						<div class="col-3 pl-0">
+							<a href="#" class="btn btn-light" id="btn-submit">Submit</a>
+						</div>
+					</div>
+				</div> <!-- end col-4 -->
+			</div>
+		</div>
+		<div class="container-fluid pt-3">
+			<div class="row">
+				<div class="col-12 pl-0 pr-0">
+					<div class="line-fluid"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-12 text-center mt-2">
+					<p><i class="far fa-copyright"></i> 2018 CREVEA Inc. All rights Reserved</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

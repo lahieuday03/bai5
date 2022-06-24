@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Cabin', sans-serif;
+}
+
+.title {
+	margin-bottom: 1em;
+}
+
+.title .line {
+	width: 2.7em;
+	height: 3px;
+	background-color: dodgerblue;
+	float: left;
+	margin-top: 0.7em;
+	margin-right: 0.5em;
+}
+
+.title a {
+	color: black;
+}
+
+header {
+	padding-top: 0.3em;
+	padding-bottom: 0.3em;
+}
+
+section,
+footer {
+	margin-top: 5em;
+}
+
+.ourBusiness #image03,
+.ourBusiness #image04 {
+	width: 100%;
+}
+
+.ourBusiness .group-text {
+	width: 85%;
+	position: absolute;
+}
+
+.ourBusiness .group-text td {
+	padding-left: 0.5em;
+	padding-right: 0.5em;
+}
+
+.ourBusiness .group-text img {
+	width: 3em;
+	height: 3em;
+	border-radius: 50% 50% 50% 50%;
+}
+
+.news img {
+	width: 100%;
+	height: 13em;
+}
+
+.contacts .form-control {
+	padding-top: 1.3em;
+	padding-bottom: 1.3em;
+}
+
+.contacts #txt-message {
+	height: 13em;
+}
+
+footer {
+	background-color: #252525;
+	color: white;
+	padding-top: 2em;
+}
+
+footer ul {
+	list-style-type: none;
+}
+
+footer ul i {
+	font-size: 0.7em;
+}
+
+footer a {
+	color: white;
+}
+
+footer #txt-email {
+	background-color: #252525;
+	border-top-width: 0;
+	border-left-width: 0;
+	border-right-width: 0;
+}
+
+footer .line-fluid {
+	width: 100%;
+	height: 1px;
+	background-color: white;
+}
+
+/* responsive */
+/* mobile */
+@media screen and (min-width: 320px) {
+
+	/* header */
+	header {
+		background-color: white;
+	}
+
+	header a {
+		color: black !important;
+	}
+
+	header #nameSite {
+		color: dodgerblue !important;
+	}
+
+	header #search-icon {
+		display: none;
+	}
+
+	header #search-icon-mobile {
+		display: block;
+	}
+
+	/* end header */
+
+	/* ourBusiness */
+	.ourBusiness .group-text {
+		top: 2em;
+		left: 2em;
+		text-align: center;
+	}
+
+	.ourBusiness .group-text .title {
+		text-align: left;
+	}
+
+	.ourBusiness #image04 {
+		height: 30em;
+	}
+
+	/* end ourBusiness */
+}
+
+/* table */
+@media screen and (min-width: 768px) {
+
+	/* header */
+	header {
+		background-color: dodgerblue;
+	}
+
+	header a,
+	header #nameSite {
+		color: white !important;
+	}
+
+	header #search-icon {
+		display: block;
+	}
+
+	header #search-icon-mobile {
+		display: none;
+	}
+
+	/* end header */
+
+	/* ourBusiness */
+	.ourBusiness .group-text {
+		top: 2em;
+		left: 2em;
+		text-align: left;
+	}
+
+	.ourBusiness #image03,
+	.ourBusiness #image04 {
+		height: 25em;
+	}
+
+	/* end ourBusiness */
+}
+
+/* desktops */
+@media screen and (min-width: 992px) {
+	.ourBusiness .group-text {
+		top: 2em;
+		left: -2em;
+	}
+}
+
+/* lager desktops */
+@media screen and (min-width: 1200px) {}
+
+/* end responsive */
